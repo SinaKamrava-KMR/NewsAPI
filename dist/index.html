@@ -1,63 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BBC News</title>
-  <link rel="stylesheet" href="styles/main.css">
-</head>
-<body class="w-screen h-screen relative overflow-x-hidden">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BBC News</title>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body class="w-screen h-screen relative overflow-x-hidden">
+    <header
+      class="bg-slate-800 shadow-lg shadow-slate-400 w-full py-3 sticky top-0 flex items-center justify-center"
+    >
+      <div
+        class="w-full lg:w-4/5 px-5 text-white flex-wrap h-full flex gap-10 justify-between"
+      >
+        <div class="flex flex-1 text-right items-end justify-center">
+          <button
+            class="py-1 px-5 bg-blue-600 flex-1 rounded-sm whitespace-nowrap"
+          >
+            جست و جو
+          </button>
+        </div>
 
-  <header class="bg-slate-800 shadow-lg shadow-slate-400 w-full py-3 sticky top-0 flex items-center justify-center">
-    <div class="w-full lg:w-4/5 px-5 text-white flex-wrap h-full flex gap-10 justify-between">
+        <div class="flex flex-1 flex-col text-right gap-2">
+          <label for="title" class="whitespace-nowrap">
+            تو کدوم دسته بندی ؟
+          </label>
+          <select class="text-slate-800 text-right py-1 px-2 rounded-sm">
+            <option value="choose" selected>انتخاب کنید</option>
+            <option value="entertainment">سرگرمی</option>
+            <option value="politic">سیاست</option>
+            <option value="sport">ورزش</option>
+          </select>
+        </div>
+        <div class="flex flex-1 flex-col text-right gap-2">
+          <label for="title" class="whitespace-nowrap"> تو چه کشوری ؟</label>
+          <select class="text-slate-800 text-right py-1 px-2 rounded-sm">
+            <option value="choose" selected>انتخاب کنید</option>
+            <option value="usa">امریکا</option>
+            <option value="iran">ایران</option>
+            <option value="spain">اسپانیا</option>
+          </select>
+        </div>
 
+        <div
+          class="flex flex-grow -order-1 w-full lg:w-[300px] lg:order-5 md:flex-grow-0 flex-col text-right gap-2"
+        >
+          <label for="title" class="whitespace-nowrap"
+            >راجب چی میخوایی بدونی ؟</label
+          >
+          <input
+            class="text-right py-1 px-2 text-slate-800 outline-0 border-0 rounded-sm"
+            type="text"
+            name="title"
+            placeholder="عنوان"
+          />
+        </div>
+      </div>
+    </header>
 
-
-      <div class=" flex flex-1 text-right items-end justify-center"> 
-        <button class=" py-1 px-5 bg-blue-600 flex-1 rounded-sm whitespace-nowrap">جست و جو</button>
+    <main
+      class="md:w-4/5 flex flex-wrap justify-between gap-2 items-start px-10 w-full h-[800px] mx-auto mt-5"
+    >
+      <div
+        class="container flex-1 min-w-[250px] bg-white text-center p-3 border border-gray-300 rounded-md"
+      >
+        <div class="w-full rounded-md h-[200px] overflow-hidden">
+          <img
+            class="w-full h-full object-cover"
+            h
+            src="/image/download.jpeg"
+            alt=""
+          />
+        </div>
+        <p class="font-bold my-4 text-lg">asdasd</p>
+        <div class="w-full h-[1px] bg-gray-200"></div>
+        <p class="my-4">adsd</p>
+        <div class="w-full h-[1px] bg-gray-200"></div>
+        <p class="bg-blue-500 text-white rounded-sm mt-4">تاریخ انتشار</p>
       </div>
 
-
-      <div class="flex flex-1   flex-col text-right gap-2 "> 
-        <label for="title" class="whitespace-nowrap">  تو کدوم دسته بندی ؟  </label>
-        <select class="text-slate-800 text-right py-1 px-2 rounded-sm">
-          <option value="choose" selected>انتخاب کنید</option>
-          <option value="entertainment">سرگرمی</option>
-          <option value="politic"> سیاست</option>
-          <option value="sport"> ورزش</option>
-        </select>
-        
-      </div>
-      <div class="flex flex-1  flex-col text-right gap-2"> 
-        <label for="title" class="whitespace-nowrap">   تو چه کشوری ؟</label>
-        <select class="text-slate-800 text-right py-1 px-2 rounded-sm">
-          <option value="choose" selected>انتخاب کنید</option>
-          <option value="usa">امریکا</option>
-          <option value="iran"> ایران</option>
-          <option value="spain"> اسپانیا</option>
-        </select>
+      <div
+        class="container flex-1 min-w-[250px] bg-white text-center p-3 border border-gray-300 rounded-md"
+      >
+        <div class="w-full rounded-md h-[200px] overflow-hidden">
+          <img
+            class="w-full h-full object-cover"
+            h
+            src="/image/download.jpeg"
+            alt=""
+          />
+        </div>
+        <p class="font-bold my-4 text-lg">asdasd</p>
+        <div class="w-full h-[1px] bg-gray-200"></div>
+        <p class="my-4">adsd</p>
+        <div class="w-full h-[1px] bg-gray-200"></div>
+        <p class="bg-blue-500 text-white rounded-sm mt-4">تاریخ انتشار</p>
       </div>
 
-
-      <div class="flex flex-grow -order-1 w-full lg:w-[300px] lg:order-5 md:flex-grow-0  flex-col text-right gap-2"> 
-        <label for="title" class="whitespace-nowrap">راجب چی میخوایی بدونی ؟</label>
-        <input class="text-right py-1 px-2 text-slate-800 outline-0 border-0 rounded-sm" type="text" name="title" placeholder="عنوان">
+      <div
+        class="container flex-1 min-w-[250px] bg-white text-center p-3 border border-gray-300 rounded-md"
+      >
+        <div class="w-full rounded-md h-[200px] overflow-hidden">
+          <img
+            class="w-full h-full object-cover"
+            h
+            src="/image/download.jpeg"
+            alt=""
+          />
+        </div>
+        <p class="font-bold my-4 text-lg">asdasd</p>
+        <div class="w-full h-[1px] bg-gray-200"></div>
+        <p class="my-4">adsd</p>
+        <div class="w-full h-[1px] bg-gray-200"></div>
+        <p class="bg-blue-500 text-white rounded-sm mt-4">تاریخ انتشار</p>
       </div>
+    </main>
 
-
-
-    </div>
-  </header>
-  
-  <main class="bg-red-500 w-4/5 h-[800px] mx-auto mt-5">
-
-
-    
-  </main>
-
-
-
-  <script src="scripts/app.js"></script>
-</body>
+    <script src="scripts/app.js"></script>
+  </body>
 </html>

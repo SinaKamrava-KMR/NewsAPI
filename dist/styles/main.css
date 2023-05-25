@@ -526,6 +526,40 @@ body::-webkit-scrollbar{
   --tw-backdrop-sepia:  ;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 .relative {
   position: relative;
 }
@@ -538,14 +572,6 @@ body::-webkit-scrollbar{
   top: 0px;
 }
 
-.order-10 {
-  order: 10;
-}
-
-.order-1 {
-  order: 1;
-}
-
 .-order-1 {
   order: -1;
 }
@@ -555,12 +581,29 @@ body::-webkit-scrollbar{
   margin-right: auto;
 }
 
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .mt-5 {
   margin-top: 1.25rem;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .flex {
   display: flex;
+}
+
+.h-\[200px\] {
+  height: 200px;
 }
 
 .h-\[800px\] {
@@ -575,8 +618,20 @@ body::-webkit-scrollbar{
   height: 100vh;
 }
 
+.h-\[250px\] {
+  height: 250px;
+}
+
+.h-\[1px\] {
+  height: 1px;
+}
+
 .w-4\/5 {
   width: 80%;
+}
+
+.w-\[300px\] {
+  width: 300px;
 }
 
 .w-full {
@@ -585,6 +640,18 @@ body::-webkit-scrollbar{
 
 .w-screen {
   width: 100vw;
+}
+
+.min-w-\[300px\] {
+  min-width: 300px;
+}
+
+.min-w-\[200px\] {
+  min-width: 200px;
+}
+
+.min-w-\[250px\] {
+  min-width: 250px;
 }
 
 .flex-1 {
@@ -601,6 +668,10 @@ body::-webkit-scrollbar{
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.items-start {
+  align-items: flex-start;
 }
 
 .items-end {
@@ -627,6 +698,10 @@ body::-webkit-scrollbar{
   gap: 0.5rem;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .overflow-x-hidden {
   overflow-x: hidden;
 }
@@ -639,8 +714,25 @@ body::-webkit-scrollbar{
   border-radius: 0.125rem;
 }
 
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
 .border-0 {
   border-width: 0px;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-gray-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 
 .bg-blue-600 {
@@ -656,6 +748,53 @@ body::-webkit-scrollbar{
 .bg-slate-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+}
+
+.bg-gray-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-blue-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 58 138 / var(--tw-bg-opacity));
+}
+
+.bg-blue-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
+.bg-red-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 202 202 / var(--tw-bg-opacity));
+}
+
+.bg-gray-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
+.p-7 {
+  padding: 1.75rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
 }
 
 .px-2 {
@@ -678,8 +817,36 @@ body::-webkit-scrollbar{
   padding-bottom: 0.75rem;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
 .text-right {
   text-align: right;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .text-slate-800 {
@@ -708,52 +875,14 @@ body::-webkit-scrollbar{
 }
 
 @media (min-width: 640px) {
-  .sm\:w-min {
-    width: -moz-min-content;
-    width: min-content;
-  }
-
-  .sm\:min-w-\[\] {
-    min-width: ;
-  }
-
-  .sm\:min-w-\[200px\] {
-    min-width: 200px;
+  .sm\:w-\[300px\] {
+    width: 300px;
   }
 }
 
 @media (min-width: 768px) {
-  .md\:order-5 {
-    order: 5;
-  }
-
-  .md\:flex {
-    display: flex;
-  }
-
   .md\:w-4\/5 {
     width: 80%;
-  }
-
-  .md\:w-min {
-    width: -moz-min-content;
-    width: min-content;
-  }
-
-  .md\:w-\[200px\] {
-    width: 200px;
-  }
-
-  .md\:w-\[300px\] {
-    width: 300px;
-  }
-
-  .md\:min-w-\[200px\] {
-    min-width: 200px;
-  }
-
-  .md\:flex-1 {
-    flex: 1 1 0%;
   }
 
   .md\:flex-grow-0 {
@@ -764,11 +893,6 @@ body::-webkit-scrollbar{
 @media (min-width: 1024px) {
   .lg\:order-5 {
     order: 5;
-  }
-
-  .lg\:w-min {
-    width: -moz-min-content;
-    width: min-content;
   }
 
   .lg\:w-4\/5 {
